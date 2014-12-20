@@ -1,0 +1,183 @@
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ * {{{
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* /css reset }}}*/
+.nav{
+	position:relative;
+	height: 42px;
+	margin:auto;
+}
+.nav_fix{
+	float: left;
+	width: 30px;
+	height:43px;
+	padding-top:3px;
+	padding-bottom:3px;
+}
+.nav_head{
+	background-image:url(../images/nav_head.jpg) ;
+}
+.nav_body{
+	position:relative;
+	width: 920px;
+	float:left;
+	line-height:43px;
+	padding-top:3px;
+	padding-bottom:3px; 
+	background-image:url(../images/nav_body.png);
+}
+.nav_tail{
+    background-image:url(../images/nav_tail.jpg);
+}
+.menu_item{
+	float: left;
+	height: 42px;
+	width: 128px;
+	text-align:center;
+	border-right:1px solid #111;
+	border-left:1px solid #d8181a;
+	position: relative;
+	font-family:'黑体';
+}
+.nav li .menu-btn{
+	font-size:20px;
+	color:white;
+	font-weight:bold;
+	 text-shadow:0 -1px 0px #111;
+}
+.first{
+	border-left:none;
+}
+.last{
+	border-right:none;
+}
+.nav a{
+	text-decoration:none;
+	color:white;
+	font-family:'黑体';
+}
+.nav li .menu-btn{
+	display:inline-block;
+    width:100%;
+    height:100%;
+    -webkit-transition:all 0.3s;
+    -moz-transition:all 0.3s;
+    -o-transition:all 0.3s;
+    transition:all 0.3s;
+}
+.nav li .mousein a,
+.nav li .menu-btn:hover,
+.nav li .menu-btn:focus{
+    background:#731011;
+    color:yellow;
+    text-shadow:0 0 20px #fff;
+    -webkit-transition:all 0.3s;
+    -moz-transition:all 0.3s;
+    -o-transition:all 0.3s;
+    transition:all 0.3s;
+}
+
+
+.menu_item .pop_menu{
+	position:absolute;
+	left: 0;
+	top:45px;
+	display:none;
+	width:400px;
+}
+.last_menu_item .pop_menu{
+    right:-10px !important;
+    left:auto;
+}
+.pop_menu div{
+    float:left;
+}
+.pop_menu a{
+    color:#fff;
+    display:inline-block;
+    padding:0px 5px;
+    text-shadow:0 -1px 0px #000;
+}
+.last_menu_item .pop_menu{
+	right:-10px;
+	left:auto;
+}
+.pop_menu li{
+	float:left;
+	width:75px;
+	line-height:25px;
+	padding:5px 10px;
+}
+.pop_menu_head{
+	float:left;
+	height:34px;
+	width:8px;
+	background-image:url(../images/pop_menu_head.png);
+}
+.pop_menu_body{
+    background-image:url(../images/pop_menu_body.png);
+}
+.pop_menu_tail{
+    background-image:url(../images/pop_menu_tail.png);
+    background-position:right;
+    width:8px;
+    height:34px;
+}
+.pop_menu .pop_menu_arrow{
+	display:inline-block;
+	width:11px;
+	height:11px;
+	position:absolute;
+	background:url(../images/arrow.png);
+	left:60px;
+	top:0;
+}
+.menu_item .last_menue_item .pop_menue .pop_menu_arrow{
+	right:60px;
+	left:auto;
+}

@@ -1,0 +1,333 @@
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ * {{{
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* /css reset }}}*/
+
+html{
+    background:#efefef;
+}
+.clear{
+    clear:both;
+}
+.top {
+    background: #ac0001;
+    color: #fff;
+    height: 35px;
+    box-shadow:0px -5px 10px #722 inset;
+}
+.top_inner {
+    width: 980px;
+    height:35px;
+    margin-left:auto;
+    margin-right:auto;
+}
+.top_func{
+    float:left;
+    font-size:14px;
+}
+.top_func li {
+    float: left;
+    padding-left:10px;
+    padding-right:10px;
+    margin-top:10px;
+    border-left:1px solid #580001;
+    border-right:1px solid #e20001;
+}
+.top_func{
+    font-size:14px;
+}
+.top_func a{
+    color:white;
+    text-decoration:none;
+}
+.top_func a:hover,
+.top_func a:focus{
+    text-decoration:underline;
+}
+.top_form{
+    float:right;
+}
+.top_form input[type=text],
+.top_form input[type=password],{
+    border:none;
+    margin-top:10px;
+    padding:1px 3px;
+}
+.top_form .btn{
+    width:47px;
+    height:24px;
+    border:none;
+    padding:none;
+    display: inline-block;
+    background-image:url(../images/search_btn.png);
+    background-color:red;
+    text-indent:0px;
+    background-repeat:no-repeat;
+}
+.top_form .btn:hover{
+    cursor:pointer;
+}
+.content_warp{
+    width: 980px;
+    margin-left:auto;
+    margin-right:auto;
+}
+.content{
+    padding-bottom:20px;
+    margin-top:30px;
+    font-family:'宋体';
+    overflow:auto;
+}
+.header{
+    height:90px;
+    margin-top:60px;
+    position:relative;
+}
+.logo{
+    /*margin-top:60px;*/
+    width:270px;
+    background-image:url(../images/logo.png);
+    background-repeat:no-repeat;
+    border-right:1px solid #ac0001;
+    padding-right:30px;
+    position:relative;
+}
+.goal{
+    width:210px;
+    height:17px;
+    color:#ac0001;
+    font-size:20px;
+    text-indent:-3000em;
+    background-image:url(../images/goal.png) !important;
+    _background-image:url(../images/goal.gif);
+    background-repeat:no-repeat;
+    position:absolute;
+    right:-230px;
+    bottom:0px;
+}
+.weather{
+    position:absolute;
+    right:0px;
+    bottom:-125px;
+}
+.nav{
+    z-index:9999;
+    position:relative;
+    height:49px;
+}
+.nav a{
+    font-family:'黑体';
+    text-decoration:none;
+}
+.nav .nav_fix{
+    float:left;
+    width:30px;
+    height:43px;
+    padding-top:3px;
+    padding-bottom:3px;
+}
+.nav .nav_head{
+    background-image:url(../images/nav_head.jpg);
+}
+.nav .nav_body{
+    position:relative;
+    width:920px;
+    float:left;
+    height:43px;
+    line-height:43px;
+    padding-top:3px;
+    padding-bottom:3px;
+    background-image:url(../images/nav_body.png);
+}
+.nav .nav_tail{
+    background-image:url(../images/nav_tail.jpg);
+}
+.nav .menu-btn{
+    font-size:20px;
+    color:white;
+    font-weight:bold;
+    text-shadow:0 -1px 0px #111;
+}
+.nav .menu_item{
+    float:left;
+    height:42px;
+    width:128px;
+    text-align:center;
+    border-right:1px solid #111;
+    border-left:1px solid #d8181a;
+    font-size:15px;
+    position:relative;
+}
+.nav li .menu-btn{
+    display:inline-block;
+    width:100%;
+    height:100%;
+    -webkit-transition:all 0.3s;
+    -moz-transition:all 0.3s;
+    -o-transition:all 0.3s;
+    transition:all 0.3s;
+}
+.nav li .mousein a,
+.nav li .menu-btn:hover,
+.nav li .menu-btn:focus{
+    background:#731011;
+    color:yellow;
+    text-shadow:0 0 20px #fff;
+    -webkit-transition:all 0.3s;
+    -moz-transition:all 0.3s;
+    -o-transition:all 0.3s;
+    transition:all 0.3s;
+}
+/*****************************************************/
+/*--------------------pop_menu------------------------*/
+.menu_item .pop_menu{
+    position:absolute;
+    left:0px;
+    top:45px;
+    z-index:9999;
+    display:none;
+    width:400px;
+}
+.last_menu_item .pop_menu{
+    right:-10px !important;
+    left:auto;
+}
+.pop_menu div{
+    float:left;
+}
+.pop_menu a{
+    color:#fff;
+    display:inline-block;
+    padding:0px 5px;
+    text-shadow:0 -1px 0px #000;
+}
+.pop_menu li{
+    float:left;
+    width:75px;
+    height:25px;
+    line-height:25px;
+    padding:5px 10px;
+}
+.pop_menu_head{
+    width:8px;
+    height:34px;
+    float:left;
+    background-image:url(../images/pop_menu_head.png);
+}
+.pop_menu_body{
+    background-image:url(../images/pop_menu_body.png);
+}
+.pop_menu_tail{
+    background-image:url(../images/pop_menu_tail.png);
+    background-position:right;
+    width:8px;
+    height:34px;
+}
+.pop_menu .pop_menu_arrow{
+    display:inline-block;
+    width:11px;
+    height:11px;
+    position:absolute;
+    background-image:url(../images/arrow.png);
+    background-repeat:no-repeat;
+    left:60px;
+    top:0;
+}
+.menu_item.last_menu_item .pop_menu .pop_menu_arrow{
+    right:60px;
+    left:auto;
+}
+/********************************************************/
+/*footer*/
+.links{
+    margin-top:20px;
+}
+.links a{
+    float:left;
+}
+.footer{
+    margin-top:20px;
+    background: #ac0001;
+    text-shadow:0 -1px 0px #000;
+    padding:13px 0px;
+    box-shadow:0px 5px 10px -2px #722 inset;
+}
+.footer_inner a:hover,
+.footer_inner a:focus{
+    font-weight:bold;
+}
+.footer_inner{
+    width: 980px;
+    margin-left:auto;
+    margin-right:auto;
+    text-align:center;
+}
+.footer_inner a{
+    color:#fff;
+    text-decoration:none;
+}
+.footer_inner p{
+    color:#fff;
+    margin:10px;
+}
+/*+-----------------overwrite css----------------------+*/
+.top_func .first,
+.nav .first,
+.list_box .first{
+    border-left:none;
+    border-top:none;
+}
+.top_func .last,
+.nav .last,
+.list_box .last{
+    border-right:none;
+    border-bottom:none;
+}
+/********************************************************/
+/* vim: fdm=marker
+ */

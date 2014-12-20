@@ -1,0 +1,424 @@
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ * {{{
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/* /css reset }}}*/
+.leave{
+    position: relative;
+    left: -20px;
+    background: url(../images/us.png) no-repeat;
+    margin: 40px 0 30px 0;
+    height: 400px;
+    width: 1000px;
+}
+.button_l{
+    position: absolute;
+    left: 861px;
+    top: 345px;
+    background: none;
+    width: 112px;
+    height: 40px;
+    z-index: 999;
+}
+.lebal{
+    position: absolute;
+    height: 226px;
+    width: 243px;
+    _width:190px;
+    _margin-right:-50px; 
+}
+.box_1{
+    margin: 35px;
+    _margin: 35px 0 35px 35px;
+    position: relative;
+    top:-250px;
+    left: 0;
+
+}
+.box_1_2,.box_1_3,.box_1_4{
+    font-size: 10pt;
+    _font-size:11pt;
+    line-height: 20px;
+}
+.box_1_3,.box_1_4{
+    position: absolute;
+    float: left;
+}
+.box_1_4{
+    top:210px;
+    left:95px;
+}
+.box_1_3{
+    top:190px;
+    left:95px;
+}
+.le{
+    height: 250px;
+    width: 250px;
+}
+.amain{
+   background: url(../images/bigred.png) no-repeat;
+   height: 1025px; 
+   _width:980px;
+}
+.top10{
+    height:40px; 
+    width: 980px;
+    background: url(../images/withus.png) no-repeat;
+}
+.location,.abc{
+    margin:12px 5px 0 0; 
+    float: right;
+    height: 20px;
+    line-height: 20px;
+    color: #898989;
+    font-size: 9pt;
+     white-space:nowrap;
+}
+.e{
+    float:left;
+    text-decoration: none;
+    color: #898989;
+    margin: 0 3px;
+}
+.e a{
+    text-decoration: none;
+}
+.abc{
+    margin-right: 15px;
+    color: black;
+    border-bottom: 1px solid black;
+    float: right;
+}
+.floatr{
+    float:left;
+}
+.left_nav{
+    float: left;
+    margin-left: 7px;
+    _margin-left:3px;
+    width: 192px;
+    height: 455px;
+}
+.box10{
+    float: left;
+    position: relative;
+    background: url(../images/unlink.png) no-repeat;
+    width: 192px;
+    height: 67px;
+    line-height: 67px;
+    text-align: center;
+    color: #898989;
+    font-size: 15pt;
+    font-weight: bold;
+}
+.box_5{
+    position: relative;
+    float: right;
+    margin-left: 10px;
+    margin-right:30px;
+    _margin-right: 20px;
+    width: 95px;
+    _width:85px;
+    height: 67px;
+    text-align: justify;
+}    
+.nav_show{
+    background: url(../images/inlink.png) no-repeat;
+    width: 192px;
+    height: 67px;
+    color: black;
+}
+.right_main{
+    float: left;
+    background: url(../images/main_g.png) no-repeat;
+    height: 980px;
+    width: 770px;
+    display: none;
+}
+.now{
+    display: block;
+}
+.la{
+    position:relative;
+    _position:absolute;
+    top:10px;
+    left:10px;
+}
+.out{
+    margin: 38px;
+}
+.linkus{
+    color: red;
+    margin: 35px 0 70px 0;
+    font-size: 14pt;
+    font-weight: bold;
+}
+.linkus_word{
+    line-height: 25px;
+    font-size: 11pt;
+    font-family: "黑体";
+    text-indent: 2em;
+    margin-bottom: 80px;
+}
+.linkus_s,.linkus_line{
+    margin: 8px;
+    line-height: 25px;
+    font-size: 11pt;
+    font-family: "黑体";
+}
+.linkus_s{
+    text-indent: 2em;
+}
+.page_index{
+    text-align:center;
+    padding-top:30px;
+    padding-bottom:30px;
+}
+.page_index a{
+    color:#ac0001;
+    background:#f5f5f5;
+    text-decoration:none;
+    margin-right:10px;
+    padding:3px 11px;
+    border:1px solid #ddf;
+    border-radius:3px;
+}
+.page_index a:hover,
+.page_index a:focus{
+    color:#002;
+    background:#eef;
+    border:1px solid #ac0001;
+}
+.page_index a:active{
+    color:#fff;
+    background-color:#ac0001;
+    box-shadow:1px 1px 8px -3px #fff inset,
+               1px 1px 4px -1px #fff inset,
+               -1px -1px 4px -1px #444 inset,
+               0px 0px 10px 0px #333;
+}
+.page_index .current_page{
+    background:#fc5;
+    cursor:default;
+    position:relative;
+}
+.page_index .current_page::after{
+    display:inline-block;
+    padding:2px;
+    border-radius:3px;
+    border:1px solid #900;
+    background:#ac0001;
+    color:white;
+    opacity:0;
+    font-size:10px;
+    top:-20px;
+    position:absolute;
+    transition:all 0.2s;
+    -webkit-transition:all 0.2s;
+}
+.page_index .current_page::after{
+    width:50px;
+    left:-14px;
+}
+.page_index .current_page:hover::after{
+    opacity:0.5;
+    content:"当前页面";
+}
+.inform{
+    height: 280px;
+    _height:200px;
+    width: 620px;
+    margin-left: 50px;    
+}
+.inform_1{
+    margin-top: 15px; 
+}
+.tp{
+    height: 25px;
+    line-height: 25px;
+   float: left; 
+   font-size: 12pt;
+   font-family: "黑体";
+   text-align: justify;
+}
+.f{
+    display: inline-block;
+    _display: inline;
+    width: 8px;
+}
+.text_2{
+    height: 150px;
+    width: 500px;
+}
+textarea{
+    resize:none;
+}
+.yanzhengma{
+    float: left;
+    margin: 0 8px 0 14px;
+    _margin-left:18px;
+    height: 20px;
+    width: 55px;
+    border: 1px solid blue;
+}
+.btn_1,.kg{
+    height: 25px;
+    width: 50px;
+    border: none;
+}
+.cbutton{
+    margin: 10px 0 0 92px; 
+}
+.btn_1,
+.kg a:hover{
+    cursor:pointer;
+}
+.btn_1{
+    background: url(../images/tj.png) no-repeat;
+}
+.kg{
+    background: url(../images/re.png) no-repeat;
+}
+.Q{
+    display: inline-block;
+    _display:inline;
+    width: 33px;
+
+}
+.anser{
+    margin-left: 25px;
+    background: url(../images/line.png) no-repeat bottom;
+}
+.yourname,.quest{
+    font-size: 12pt;
+    font-family: "黑体";
+    line-height: 30px;
+}
+.yourname{
+    color: red;
+}
+.time_line{
+    position:relative;
+}
+.time10{
+    padding-left: 450px;
+    padding-bottom: 5px;
+    font-size: 10pt;
+    font-size: "黑体";
+    color: #cecece;
+}
+.cc{
+    background: url(../images/zhou.png) no-repeat;
+    position: absolute;
+    left: 310px;
+    _left:260px;
+    height: 600px;
+    width: 170px;
+}
+.time_pi{
+    position:absolute; 
+    height: 104px;
+    width: 255px;
+}
+.cyuan{
+    position: absolute;
+    background: url(../images/history_f.png) no-repeat;
+    height: 979px;
+    width: 769px;
+}
+.title{
+
+    margin: -20px 0px 20px;
+    text-align: center;
+    font-size: 16pt;
+    font-weight: bold;
+}
+.frank,.frank_1,.frank_2,.frank_3{
+    margin: 8px;
+    _margin:5px;
+    line-height: 15px;
+    line-height: 19px;
+    _height:19px;
+    font-size: 11pt;
+    font-family: "黑体";
+    float: left; 
+    display: inline-block;
+}
+.linkus_t{
+    float: left;
+    _margin:3px;
+}
+.frank_1{
+    margin-left:110px;
+    _margin-left:85px;
+}
+.frank_2{
+    margin-left:90px;
+    _margin-left:95px; 
+}
+.frank_3{
+    margin-left:35px;
+    _margin-left:30px;
+    width: 200px;
+    text-align: center;   
+    text-decoration: none; 
+}
+.R{
+    display: inline-block;
+    _display:inline;
+    width: 15px;
+}
+.pnow{
+    display: none;
+}
+.return{
+    margin-top: 30px;
+    float: right;
+    font-size: 11pt;
+    color: red;
+}
